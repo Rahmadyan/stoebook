@@ -1,0 +1,16 @@
+php artisan make:controller BelajarController  //membuat controller dengan nama BelajarController
+php artisan make:model Kendaraan -m  //membuat model Kendaraan nb. jika tanpa -m tidak membuat file migration
+php artisan migrate //menggenerate file migration ke database
+php artisan make:migration create_users_table // membuat migration dengan users=nama tabel dan table = indikasi berarti itu tabel
+php artisan make:seeder KendaraansTableSeeder //membuat seeder dengan nama KendaraansTableSeeder
+php artisan db:seed --class=KendaraansTableSeeder // perintah di atas akan menjalankan satu file seeder dengan nama KendaraansTableSeeder.php
+php artisan db:seed // jika memiliki banyak file seeder yang akan di eksekusi kalian bisa menggunakan perintah ini
+php artisan make:migration adding_coloumns_in_kendaraans_table // untuk menambahkan colom di table kendaraan
+php artisan migrate:fresh --seed // mmembuat tabel dan mengisi
+php artisan make:model Thread -c -r //membuat model dan controller dengan resourcenya
+
+
+
+
+
+
